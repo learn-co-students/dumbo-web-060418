@@ -26,7 +26,7 @@
   * `#painter_name` that returns the name of the Painting's Painter
 
 * Create a Gallery class
-  * should initialize with a name
-  * a reader method for name
+****  * should initialize with a name
+****  * a reader method for name
   * `#paintings` that returns an array of Painting instances
   * `#painters` that returns an array of Painter instances

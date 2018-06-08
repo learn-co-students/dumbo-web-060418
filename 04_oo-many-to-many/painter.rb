@@ -49,7 +49,7 @@ class Painter
   # painter, style, title, year, owner
   #
   def make_painting(title, style, year, gallery)
-    painting = Painting.new(self, title, style, year, owner)
+    painting = Painting.new(self, title, style, year, gallery)
   end
 
 
@@ -61,6 +61,10 @@ class Painter
     Painting.all.select do |painting|
       painting.painter == self
     end
+  end
+
+  def galleries
+    self.paintings.map { |painting| painting.gallery }.uniq
   end
 
 

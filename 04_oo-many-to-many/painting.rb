@@ -18,6 +18,11 @@ class Painting
     @@all << self
   end
 
+  def painter_name
+    # Return back the name of my painter
+    self.painter.name
+  end
+
   def self.all
     @@all
   end
