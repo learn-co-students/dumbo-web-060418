@@ -83,35 +83,4 @@ class Painter
     end.uniq
 
   end
-
-
-
-
-  # Attribute Readers
-  # They expose instance variables to the world
-  # def name
-  #   @name
-  # end
-  #
-  # def style
-  #   @style
-  # end
-  #
-  # def age
-  #   @age
-  # end
-
-  # Attribute Writer
-  # Only to change the instance variable
-  # def style=(style)
-  #    @style = style
-  # end
-  #
-  # def age=(age)
-  #   @age = age
-  # end
-  #
-  # def name=(name)
-  #   @name = name
-  # end
 end
