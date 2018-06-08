@@ -6,7 +6,7 @@ class Painting
 
 
   # ALL is the same as @@all -- class variable
-  ALL = []
+  @@all = []
 
   def initialize(painter, title, style, year, gallery)
     @painter = painter
@@ -15,11 +15,11 @@ class Painting
     @year = year
     @gallery = gallery
 
-    ALL << self
+    @@all << self
   end
 
   def self.all
-    ALL
+    @@all
   end
 
 
