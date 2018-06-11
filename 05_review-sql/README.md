@@ -1,6 +1,6 @@
 # Intro to SQL
 
-Let's take a gander at the `chinook.db` inside of `sqlite3` or SQLite Browser
+Let's take a gander at the `music.db` inside of `sqlite3` or SQLite Browser
 
 ## Challenges
 
