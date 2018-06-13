@@ -12,6 +12,4 @@ cheese2 = Painting.new(prince, 'extra-cheesy', "The great cheese v.2", "1991", "
 
 binding.pry
 
-
-
 # making sure pry starts
