@@ -9,6 +9,7 @@ Cult#blood_oaths
 Cult#followers
 Cult#recruit_follower
 Cult.least_popular
+Cult.find_by_location
 
 
 Each follower has a name
