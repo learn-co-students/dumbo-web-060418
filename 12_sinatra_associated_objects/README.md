@@ -7,3 +7,6 @@
 * Describe how to nest arrays inside of the params hash
 * Describe how mass assignment works in relation to hashes
 * Demonstrate how to use the params hash to mass assign and create related objects
+* Making new controllers that inherit from ApplicationController
+* Using those new controllers in our `config.ru`
+* Building custom model methods to handle non-standard inputs

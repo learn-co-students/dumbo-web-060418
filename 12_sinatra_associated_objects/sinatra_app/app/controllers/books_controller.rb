@@ -11,15 +11,6 @@ class BooksController < ApplicationController
     erb :'books/index.html'
   end
 
-  # New action
-  # ====================
-  # Its goal is to send us to the new form! We haven't build this out just quite yet
-  get '/books/new' do
-    # New Form
-    erb :'books/new.html'
-    # new.html.erb
-  end
-
   # Create Action
   # ============
   # It complements the new action
@@ -33,6 +24,16 @@ class BooksController < ApplicationController
     book.save
     redirect "/books/#{book.id}"
   end
+
+  # New action
+  # ====================
+  # Its goal is to send us to the new form! We haven't build this out just quite yet
+  get '/books/new' do
+    # New Form
+    erb :'books/new.html'
+    # new.html.erb
+  end
+
 
 
   # Show action
