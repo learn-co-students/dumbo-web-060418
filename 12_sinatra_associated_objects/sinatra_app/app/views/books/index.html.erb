@@ -1,0 +1,9 @@
+<h2>All the Books!</h2>
+
+<% @books.each do |book| %>
+  <div>
+    <!-- /books/49 -->
+    <p><a href="/books/<%= book.id %>"><%= book.title %></a> - <%= book.author.name %></p>
+    <p><%= book.snippet %></p>
+  </div>
+<% end %>

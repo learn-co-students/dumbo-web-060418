@@ -1,13 +1,13 @@
 <h1>Create a new Book</h1>
 <form method="POST" action="/books">
   <label>Title</label>
-  <input type="text" name="title"/>
+  <input type="text" name="book[title]"/>
   <br>
   <label>Author</label>
-  <input type="text" name="author"/>
+  <input type="text" name="book[author]"/>
   <br>
   <label>Snippet</label>
-  <input type="text" name="snippet"/>
+  <input type="text" name="book[snippet]"/>
   <br>
   <input type="submit"/>
 </form>
