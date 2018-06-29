@@ -1,0 +1,35 @@
+<%= form_for @car do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :make %>
+  <%= f.text_field :make %>
+
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+
+  <%= f.label :year %>
+  <%= f.number_field :year %>
+
+  <%= f.submit %>
+<% end %>
+
+<!--
+  The code above helps us easily write out the stuff above
+
+  <h2>Edit <%= @car.name %></h2>
+
+  <form method="POST" action="/cars/<%= @car.id %>">
+    <input type="hidden" name="authenticity_token">
+    <input type="hidden" name="_method" value="PATCH">
+    <label>Name</label>
+    <input type="text" name="car[name]" value="<%= @car.name %>" placeholder="Lightning McQueen">
+    <label>Make</label>
+    <input type="text" name="car[make]" value="<%= @car.make %>" placeholder="Dodge Charger">
+    <label>Color</label>
+    <input type="text" name="car[color]" value="<%= @car.color %>" placeholder="RED">
+    <label>Year</label>
+    <input name="car[year]" placeholder="YYYY" value="<%= @car.year %>" type="number">
+    <input type="submit">
+  </form>
+-->

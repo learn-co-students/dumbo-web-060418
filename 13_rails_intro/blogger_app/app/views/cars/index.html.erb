@@ -1,0 +1,11 @@
+<% @cars.each do |car| %>
+  <div>
+    <h3><%= car.name %> - <%= car.make %></h3>
+    <p><%= car.color %></p>
+    <p><%= car.year %></p>
+  </div>
+
+  <%= link_to "Show me #{car.name}", "/cars/#{car.id}", class: "wow" %>
+  <!-- <a href="/cars/<%= car.id %>">Show me <%= car.name%></a> -->
+  <!-- Some link to the show page -->
+<% end %>
