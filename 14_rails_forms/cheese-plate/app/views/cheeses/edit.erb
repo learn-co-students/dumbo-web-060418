@@ -1,0 +1,12 @@
+<%= form_for @cheese do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+  <br>
+  <%= f.label :smelliness %>
+  <%= f.number_field :smelliness %>
+  <br>
+  <%= f.submit "cheese maker" %>
+<% end %>

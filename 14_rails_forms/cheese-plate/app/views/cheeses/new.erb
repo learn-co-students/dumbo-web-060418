@@ -1,0 +1,46 @@
+
+<h1>make a new cheese</h1>
+<!--
+<%#= form_tag '/cheeses' do %>
+  <%#= label_tag 'cheese_name' %>
+  <%#= text_field_tag 'cheese[name]' %>
+  <br>
+  <%#= label_tag 'cheese_age' %>
+  <%#= number_field_tag 'cheese[age]' %>
+  <br>
+  <%#= label_tag 'cheese_smelliness' %>
+  <%#= number_field_tag 'cheese[smelliness]', nil, in: 0..10 %>
+  <br>
+
+  <%#= submit_tag "submit da cheese" %>
+<%# end %> -->
+
+<%= form_for @cheese do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+  <br>
+  <%= f.label :smelliness %>
+  <%= f.number_field :smelliness %>
+  <br>
+  <%= f.submit "cheese maker" %>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  -->

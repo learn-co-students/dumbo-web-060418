@@ -1,0 +1,10 @@
+<h1>hello cheesey world</h1>
+
+<% @cheeses.each do |cheese| %>
+  <h3><%= link_to cheese.name, cheese_path(cheese) %></h3>
+<% end %>
+
+<%= button_to "make a new cheese", new_cheese_path, method: 'get' %>
+
+<!-- link_to default method is get -->
+<!-- button_to default method is post -->

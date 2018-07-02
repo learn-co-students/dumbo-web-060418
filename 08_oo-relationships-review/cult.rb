@@ -36,21 +36,21 @@ class Cult
   end
 
 
-  # def self.least_popular
-  #   # compare the cults
-  #   # cult with the lowest amount of followers should be returned
-  #   # iterate over each instance of cult
-  #   min = 1.0/0.0
-  #   least_popular = ''
-  #
-  #   self.all.each do |cult|
-  #     if cult.followers.count < min
-  #       min = cult.followers.count
-  #       least_popular = cult
-  #     end
-  #   end
-  #   least_popular
-  # end
+  def self.least_popular
+    # compare the cults
+    # cult with the lowest amount of followers should be returned
+    # iterate over each instance of cult
+    min = 1.0/0.0
+    least_popular = ''
+
+    self.all.each do |cult|
+      if cult.followers.count < min
+        min = cult.followers.count
+        least_popular = cult
+      end
+    end
+    least_popular
+  end
 
 
   def self.least_popular
