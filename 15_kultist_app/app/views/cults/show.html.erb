@@ -1,0 +1,9 @@
+<h1><%= @cult.name %></h1>
+
+<h3>Followers of the cult <%= @cult.name %></h3>
+
+<ul>
+<% @cult.followers.each do |follower| %>
+  <li><%= follower.name %></li>
+<% end %>
+</ul>

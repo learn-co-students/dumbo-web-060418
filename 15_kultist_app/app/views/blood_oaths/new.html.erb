@@ -1,0 +1,11 @@
+<h2>Create A BloodOath</h2>
+<%= form_for @blood_oath do |f| %>
+  <!-- Follower (id), Cult (id) -->
+  <%= f.label :cult_id, "Cult" %>
+  <%= f.collection_select :cult_id, Cult.all, :id, :name %>
+  <br/>
+  <%= f.label :follower, "Follower Name" %>
+  <%= f.text_field :follower %>
+  <br/>
+  <%= f.submit %>
+<% end %>
