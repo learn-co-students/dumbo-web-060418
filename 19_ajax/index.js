@@ -22,20 +22,14 @@ function init() {
 
     // doing something with that data
     const newSearchEngineTemplate = `<li><a href="${searchEngineUrl}">${searchEngineName}</a></li>`;
-    fetch('https://api.jsonbin.io/b/5b509f974d5ea95c8ba73ec2', {
-      method: 'PUT',
+    fetch('http://localhost:3000/engines', {
+      method: 'POST',
       headers: {
-        'secret-key':
-          '$2a$10$Nwu.V0phVzOqQA38Ptys5etRCEPdB1Z/tYaAJS0vuQ8cBsunm3eZe',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        engines: [
-          {
-            name: searchEngineName,
-            url: searchEngineUrl
-          }
-        ]
+        name: searchEngineName,
+        url: searchEngineUrl
       })
     });
 
@@ -45,12 +39,8 @@ function init() {
   });
 
   // Initial render
-  fetch('https://api.jsonbin.io/b/5b509f974d5ea95c8ba73ec2', {
-    method: 'GET',
-    headers: {
-      'secret-key':
-        '$2a$10$Nwu.V0phVzOqQA38Ptys5etRCEPdB1Z/tYaAJS0vuQ8cBsunm3eZe'
-    }
+  fetch('http://localhost:3000/engines', {
+    method: 'GET'
   })
     .then(function(resp) {
       console.log(resp);
@@ -58,7 +48,7 @@ function init() {
     })
     .then(function(data) {
       const seList = document.querySelector('#search-engine-list');
-      const template = data.engines
+      const template = data
         .map(function(engine) {
           return `<li><a href="${engine.url}">${engine.name}</a></li>`;
         })
