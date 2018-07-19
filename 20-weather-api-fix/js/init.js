@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var API_KEY = 'ba08aeb4a9ccddc32fa1f09becafef35';
+  var API_KEY = 'your api key';
   var CORS_WRAPPER = 'https://cors-anywhere.herokuapp.com/';
   var URL =
     CORS_WRAPPER +
