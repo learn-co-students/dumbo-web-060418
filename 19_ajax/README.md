@@ -5,12 +5,13 @@
 - Post new search engines to the API
   - `.THEN` put them on the page
 
-## To get this working!
+## To get the local API working!
 
 Run these commands in the terminal:
 
 ```
 npm install -g json-server
 json-server --watch db.json
-open index.html
 ```
+
+Now, you should visit `http://localhost:3000/engines` in your browser and you should have full REST for the `engines` resource.
