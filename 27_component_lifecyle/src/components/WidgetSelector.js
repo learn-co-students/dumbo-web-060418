@@ -5,7 +5,7 @@ class WidgetSelector extends Component {
   render () {
     return (
       <div className="app-children">
-        <button onClick={this.props.onToggleClock}>
+        <button >
           Switch To Stocks
         </button>
       </div>
