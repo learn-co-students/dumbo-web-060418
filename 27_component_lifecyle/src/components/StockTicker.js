@@ -7,13 +7,11 @@ class StockTicker extends Component {
       price: this.stockPrice(),
       color: 'white'
     }
-    this.count = 0
   }
 
   componentDidMount() {
     this.price = setInterval(() => this.setState((prevState) => {
       const price = this.stockPrice()
-      this.color = prevState.price > price ? 'red' : 'green'
       return {price}
     }), 1000)
   }
@@ -30,16 +28,14 @@ class StockTicker extends Component {
     // if we are in this update because the state of the color was just changed, skip the color change
     if (prevState.price === this.state.price) return
     if (prevState.price > this.state.price) {
-      console.log('color state', this.count)
       this.setState({color:'red'})
     } else {
-      console.log('color state', this.count)
       this.setState({color:'green'})
     }
   }
 
   render () {
-    const divStyle = {color: this.color}
+    const divStyle = {color: this.state.color}
     return (
       <div className="app-children">
         <div id="ticker">
