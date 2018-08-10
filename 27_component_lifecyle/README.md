@@ -10,7 +10,6 @@
 - *componentDidUpdate()*
 - *componentWillUnmount()*
 
-
 ### Birth (Mounting)
 - *constructor(props)*
   - called before it is mounted
@@ -29,7 +28,7 @@
 - *render()*
 - getSnapshotBeforeUpdate(prevProps, prevState)
   - invoked right before the most recently rendered output is committed to e.g. the DOM. It enables your component to capture some information from the DOM (e.g. scroll position) before it is potentially changed. Any value returned by this lifecycle will be passed as a parameter to componentDidUpdate()
-- *componentDidUpdate()*
+- *componentDidUpdate(prevProps, prevState)*
   - invoked immediately after updating occurs. This method is not called for the initial render
   - watch out for infinite loops if setting state!
 

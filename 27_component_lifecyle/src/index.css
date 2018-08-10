@@ -5,6 +5,10 @@ body {
   width: 100vw
 }
 
+img {
+  width: 300px
+}
+
 #app {
   display: grid;
   grid-template-rows: 8vw 30vw;
