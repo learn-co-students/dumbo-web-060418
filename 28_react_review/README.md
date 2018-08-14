@@ -1,5 +1,24 @@
+# Animal Shopping
 - Animal Container holds everything to do with animals
 - Animal Catalogue shows animals available for purchase
 - Zoo shows animals in my zoo's shopping cart
-  - can only select one male and one female of each kind
 - Animal Card shows information for a single Animal
+- Bonus: We can only select one male and one female of each animal type
+
+- read instructions
+- map out component structure
+- think about state
+  - keep it as low as possible while still giving everyone access who needs it
+  - hook up components, add name if no content
+- fetch your data
+  - console.log it
+- events
+  - console.log to make sure it is connected
+- read the error messages
+  - am i passing down all the props i need
+  - check spelling and pluralization
+  - if something is undefined, forgot this
+  - if something is undefined, forgot RETURN
+  - did you execute a callback instead of passing a reference
+  - are you returning jsx
+  - where to set constants
