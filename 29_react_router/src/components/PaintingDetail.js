@@ -1,7 +1,6 @@
 import React from 'react'
 
-const PaintingDetail = (props) => {
-
+const PaintingDetail = ({painting}) => {
   return (
     <div>
       <h1> Title: {painting.title} </h1>
