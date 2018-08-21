@@ -1,6 +1,5 @@
-# Router
-
+# BrowserRouter
 # Link
 # Route
 # Switch
-# Redirect
+<!-- # Redirect -->
