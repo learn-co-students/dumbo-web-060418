@@ -4,7 +4,8 @@ const Main = (props) => {
 
   return (
     <div>
-      This app does painting stuff.
+      <h2>Main</h2>
+      <p>This app does painting stuff.</p>
     </div>
 
   )
