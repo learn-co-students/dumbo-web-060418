@@ -1,7 +1,7 @@
 import React from 'react'
 
 const PaintingCard = (props) => {
-
+  
   return (
     <div>
       <h1> Title: {props.title} </h1>
